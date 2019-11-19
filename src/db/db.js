@@ -2,6 +2,7 @@ const mongoose = require('mongoose')
 
 if (process.env.NODE_ENV === 'production') {
     var connectionURL = process.env.connectionURL
+    console.log(connectionURL)
 } else {
     const credentials = require('../credentials')
     var connectionURL = credentials.connectionURL
